@@ -49,6 +49,30 @@ clean_name = sanitise("my*illegal:file?.txt")
 print(clean_name)  # Output: myillegalfile.txt
 ```
 
+### `logger.py`
+
+Pre-made logging functionality, uses `colours.py` to colour the output of various logging levels.
+The following logging levels exist and are appropriately coloured:
+
+* `DEBUG` - Cyan
+* `INFO` - Cyan
+* `SUCCESS` - Green
+* `WARNING` - Yellow
+* `ERROR` - Red
+* `CRITICAL` - Red
+
+Example usage:
+
+```py
+from TrueGIXERJ_Utils.logger import logger
+logger.debug("This is a debug message")
+logger.info("This is an info message")
+logger.success("This is a success message")
+logger.warning("This is a warning message")
+logger.error("This is an error message")
+logger.critical("This is a critical error message")
+```
+
 ## Installation
 
 This package is available on PyPI, and can be installed by running:
@@ -66,10 +90,11 @@ Simply import the necessary modules and use the functions as described above.
 ```py
 from TrueGIXERJ_Utils.colours import red, green
 from TrueGIXERJ_Utils.files import sanitise
+from TrueGIXERJ_Utils.logger import logger
 
 print(red("This is an error message"))
-print(green("Success!"))
 print(sanitise("illegal:file/name.txt"))
+logger.success("Yippee!")
 ```
 
 ## Project Structure
@@ -78,7 +103,8 @@ print(sanitise("illegal:file/name.txt"))
 TrueGIXERJ_Utils/
 ├── __init__.py
 ├── colours.py
-└── files.py
+├── files.py
+└── logger.py
 ```
 ## License
 
