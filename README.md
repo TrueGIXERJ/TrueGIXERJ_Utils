@@ -81,7 +81,7 @@ This package is available on PyPI, and can be installed by running:
 
 Alternatively, it can be manually installed by cloning the git repository:
 
-``git clone https://github.com/YourUsername/TrueGIXERJ_Utils.git``
+``git clone https://github.com/TrueGIXERJ/TrueGIXERJ_Utils.git``
 
 ## Usage
 
