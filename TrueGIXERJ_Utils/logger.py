@@ -46,7 +46,6 @@ logger.addHandler(stream_handler)
 def success(self, message, *args, **kwargs):
     """
     Custom logging method for logging success messages.
-    Behaves similarly to 
 
     :param message: the log message to be logged.
     :param args: any additional arguments to pass to the log message.
